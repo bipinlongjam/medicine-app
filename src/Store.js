@@ -44,7 +44,7 @@ const UserContextProvider = (props) => {
       0
     );
     setTotal(() => totalCount);
-  }, [medArray]);
+  }, [medArray]); 
 
   const addProduct = (newItem) => {
     setMedArray([...medArray, newItem]);

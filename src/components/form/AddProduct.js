@@ -12,7 +12,8 @@ const AddProduct = () => {
       name: event.target.name.value,
       desc: event.target.desc.value,
       price: event.target.price.value,
-      qty: parseInt(event.target.qty.value)
+      qty: 0
+      // 0parseInt(event.target.qty.value)
     };
 
     user.addProduct(obj);
@@ -33,10 +34,10 @@ const AddProduct = () => {
        <label htmlFor="price">Price </label>
         <input type="number" id="price" name="price" />
        </span>
-       <span>
+       {/* <span className={classes.hiddenspan}>
        <label htmlFor="quantity">Quantity</label>
-        <input type="number" id="qty" name="qty" />
-       </span>
+        <input type="number" id="qty" name="qty" value="0" />
+       </span> */}
       <span>
       <button type="submit" className={classes.button}>
           {" "}
